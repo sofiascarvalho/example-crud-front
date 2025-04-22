@@ -40,7 +40,7 @@ header input{
     font-size: 1rem;
 }
 
-button{
+header button{
     height: 5vh;
     padding-inline: 1rem;
     background-color: red;
@@ -48,4 +48,32 @@ button{
     font-weight: bold;
     border: 0;
     border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.container{
+    padding-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card-contato{
+    height: 28vh;
+    width: 10vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px #0003;
+    border-bottom: 32px solid red;
+}
+
+.card-contato img{
+    width: 6vw;
+    border-radius: 100%;
+    border: 0.2rem solid red;
 }

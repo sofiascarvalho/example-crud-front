@@ -1,10 +1,18 @@
 'use strict'
 
+export async function getContatosPorNome(nome) {
+    const url=`https://bakcend-fecaf-render.onrender.com/contatos?nome_like=^${nome}`
+    console.log(url);
+    
+    const response=await fetch(url)
+    const data=await response.json()
+    return data
+}
+
 export async function getContatos(){
     const url="https://bakcend-fecaf-render.onrender.com/contatos"
     const response=await fetch(url)
     const data=await response.json()
-    console.log(data)
     return data 
 }
 

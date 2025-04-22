@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+body{
+    padding: 3rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    padding-bottom: 4vh;
+    border-bottom: 0.15rem solid red;
+}
+
+header img{
+    height: 5vh;
+}
+
+header input{
+    height: 5vh;
+    flex-grow: 1; /*ocupar todo o espaço livre sem empurrar os outros elementos*/
+    padding-inline-start: 0.5rem ; /*padding no inicio*/
+    border: 0.15rem solid red;
+    border-radius: 0.8rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+button{
+    height: 5vh;
+    padding-inline: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 0.8rem;
+}

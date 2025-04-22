@@ -1,6 +1,6 @@
 'use strict'
 
-async function getContatos(){
+export async function getContatos(){
     const url="https://bakcend-fecaf-render.onrender.com/contatos"
     const response=await fetch(url)
     const data=await response.json()
@@ -43,3 +43,4 @@ async function deleteContato(id) {
     const response=await fetch(url, options)
     return response.ok
 }
+
